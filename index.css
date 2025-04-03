@@ -1,4 +1,4 @@
-html{
+html {
     height:100%;
 }
 
@@ -9,6 +9,7 @@ body {
     margin:0;
     height:100%;
     display: flex;
+    overflow: hidden;
 }
 
 .header {
@@ -19,6 +20,7 @@ body {
     overflow:hidden;
     padding: 1vh;
     text-align: center;
+    position: absolute;
 }
 
 /* Using media queries to adapt the screen to mobile view*/
@@ -32,7 +34,7 @@ body {
     text-decoration: underline;
 }
 
-.header img{
+.header img {
     object-fit:cover;
     max-width: 90%;
     display: block;
@@ -49,9 +51,10 @@ body {
     height: 8vh;
     width: 100%;
     color: white;
+    position: absolute;
 }
 
-.topNav ul{
+.topNav ul {
     text-align: center;
     list-style: none;
 }
@@ -68,6 +71,33 @@ li:hover {
     background-color:rgba(0, 0, 0, 0.1);
     cursor: pointer;
     border-radius: 5%;
+}
+
+/* Styling for front page image gallery */
+.imgGallery {
+    display: flex;
+    flex-wrap: wrap;
+    position:inherit;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10vh;
+    overflow: auto;
+    scrollbar-width: none;;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top:8px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px black;
+    vertical-align:middle;
+    width: 100%;
 }
 
 .page{
