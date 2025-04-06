@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
-</head>
-<body>
-    <script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Dogs Are The Best</title>
+  </head>
+  <body onload="hideOnload()">
+    <div class="topNav">
+      <ul>
+        <li class="menu" id="page1" onclick="home()">Home</li>
+        <li class="menu" id="page2" onclick="hideGallery()">Game</li>
+        <li class="menu" id="page3" onclick="hideGallery()">Advice</li>
+        <li class="menu" id="page4" onclick="hideGallery()">About</li>
+      </ul>
+    </div>
 
-    <!-- Side / top header-->
-    <div class="header">
+    <div class="container">
+      <!-- Side / top header-->
+      <div class="header">
         <h1 class="title">Cozmo</h1>
-        <p> This is my dog Cozmo. He was born on March 27th, 
-            2010 and sadly passed away in April 22nd, 2022.
-            I am dedicating this website to him.
+        <p>
+          This is my dog Cozmo. He was born on March 27th, 2010 and sadly passed
+          away in April 22nd, 2022. I am dedicating this website to him.
         </p>
         <div class="profile">
-            <img src="img/cozmo.JPG">
+          <img src="img/cozmo0.JPG" />
         </div>
-    </div>
+      </div>
 
-    <div class="topNav">
-        <ul>
-            <li>Cozmo</li>
-            <li>Cozmo</li>
-            <li>Cozmo</li>
-            <li>Cozmo</li>
-        </ul>
-    </div>
+      <!-- Image gallery front page -->
+      <div id="imgGallery" class="imgGallery"></div>
 
-    <div class="imgGallery">
-        <div class="column">
-            <img src="img/cozmo2.jpg">
-            <img src="img/cozmo3.jpg">
-            <img src="img/cozmo4.jpg">
-        </div>
-        <div class="column">
-            <img src="img/cozmo5.jpg">
-            <img src="img/cozmo6.jpg">
-            <img src="img/cozmo7.jpg">
-        </div>
-        <div class="column">
-            <img src="img/cozmo8.jpg">
-            <img src="img/cozmo9.jpg">
-            <img src="img/cozmo.jpg">
-        </div>
-    </div>
+      <!-- Right side column -->
+      <div class="testContainer">
+        <h1>Linkedin</h1>
+        <h1>Instagram</h1>
+        <h1>E-Mail</h1>
+      </div>
 
-     <!-- These pages are not displayed at start as this is a one page application -->
-    <div class="page">
+      <!-- These pages are not displayed at start as this is a one page application -->
+      <div class="page">
         <h1>content</h1>
-    </div>
-    <div class="page">
+      </div>
+      <div class="page">
         <h1>content</h1>
-    </div>
-    <div class="page">
+      </div>
+      <div class="page">
         <h1>content</h1>
+      </div>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
