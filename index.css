@@ -59,6 +59,7 @@ body {
 .topNav ul {
   text-align: center;
   list-style: none;
+  margin: 0;
 }
 
 .topNav li {
@@ -93,7 +94,7 @@ li:hover {
 }
 
 /* Note for later: Finx a way to style different size images correctly*/
-.imgDiv img{
+.imgDiv img {
   width: 90%;
   height: 100%;
   max-height: 100%;;
@@ -101,7 +102,11 @@ li:hover {
   border: 1px solid white;
 }
 
-.page {
-  width: 80%;
-  height: 100%;
+.ark {
+  flex-basis:200vh;
+  justify-content: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100vh;
 }
