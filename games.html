@@ -9,10 +9,10 @@
   <body>
     <div class="topNav">
       <ul>
-        <li onclick = "window.location.href='index.html';">Home</li>
+        <li onclick="window.location.href='index.html';">Home</li>
         <li>Game</li>
-        <li onclick = "window.location.href='advice.html';">Advice</li>
-        <li onclick = "window.location.href='about.html';">About</li>
+        <li onclick="window.location.href='advice.html';">Advice</li>
+        <li onclick="window.location.href='about.html';">About</li>
       </ul>
     </div>
 
@@ -29,8 +29,12 @@
         </div>
       </div>
 
-      <div class="ark">
-        <h1>Games</h1>
+      <div class="arkContainer">
+        <div class="ark">
+          <h1>Games</h1>
+          <p id="info">Info</p>
+          <div id="gameboard"></div>
+        </div>
       </div>
 
       <!-- Right side column -->
@@ -40,6 +44,6 @@
         <h1>E-Mail</h1>
       </div>
     </div>
-   
+    <script src="games.js"></script>
   </body>
 </html>
