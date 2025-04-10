@@ -96,6 +96,7 @@ const generateComputerChoice = () => {
 for (let i = 0; i < choices.length; i++) {
   // I want to create three buttons
   const button = document.createElement("button");
+  button.classList.add("rockBtn");
   button.id = choices[i]; // Giving the button the ID of either rock, paper or scissor
   button.innerHTML = choices[i];
   button.addEventListener("click", handleClick); // Each time we click the button, call handleClick
