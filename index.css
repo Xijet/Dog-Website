@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -9,6 +10,21 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+button {
+  padding: 20px;
+  background-color: #ac97f8;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 3px 3px 5px black;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: none;
 }
 
 .container {
@@ -181,8 +197,45 @@ li:hover {
 }
 
 .rockBtn {
-  padding: 20px;
   margin: 4px;
+}
+
+/* -------- Advice -------- */
+
+.adviceBox {
+  height: 300px;
+  align-content: center;
+  position: relative;
+}
+
+.adviceBtn {
+  margin: 5%;
+}
+
+.adviceBox > p {
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 
+  0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, 
+  rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.about p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.me {
+  border-radius: 0%;
+  border: 8px inset #ac97f8
 }
 
 /* Using media queries to adapt the screen to mobile view*/

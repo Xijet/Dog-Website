@@ -69,6 +69,7 @@ const userChoiceDisplay = document.createElement("h2");
 const computerChoiceDisplay = document.createElement("h2");
 const resultDisplayRock = document.createElement("h2");
 const rockGameGrid = document.getElementById("rockPaperScissor");
+
 rockGameGrid.append(
   userChoiceDisplay,
   computerChoiceDisplay,
