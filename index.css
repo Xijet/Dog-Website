@@ -33,17 +33,36 @@ button:active {
 
 .rightContainer {
   flex-basis: 30vh;
+  margin-right: 5vh;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+  color: white;
 }
 
-.links {
-  background-color: white;
-  border-radius: 10%;
+.rightContainer h2 {
+  text-align: justify;
+}
+
+.me {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 1px solid white;
+}
+
+.socials {
+  color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
 }
 
 .header {
   padding: 1vh;
   text-align: center;
   flex-basis: 30vh;
+  margin-left: 5vh;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 .title {
@@ -54,8 +73,8 @@ button:active {
 
 .header img {
   width: 100%;
-  display: block;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 1px solid white;
 }
 
 /* Styling for top navigation bar*/
@@ -195,7 +214,8 @@ li:hover {
 
 /* Rock Paper Scissor */
 #rockPaperScissor {
-  border: 2px solid black;
+  border: solid 3px rgb(75, 57, 116);
+  border-radius: 10px;
   width: 300px;
   height: 300px;
   margin: auto;
@@ -233,20 +253,13 @@ li:hover {
 }
 
 .about {
-  display: flex;
   flex-direction: row-reverse;
   margin: 20px;
 }
 
 .about p {
-  width: 80%;
   margin: 10px;
-  text-align: justify;
-}
-
-.me {
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-align: center;
 }
 
 /* Using media queries to adapt the screen to mobile view*/
