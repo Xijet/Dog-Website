@@ -35,6 +35,11 @@ button:active {
   flex-basis: 30vh;
 }
 
+.links {
+  background-color: white;
+  border-radius: 10%;
+}
+
 .header {
   padding: 1vh;
   text-align: center;
@@ -50,7 +55,7 @@ button:active {
 .header img {
   width: 100%;
   display: block;
-  mask: radial-gradient(40px at bottom, #0000 98%, #000) 50% / 74px 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* Styling for top navigation bar*/
@@ -227,15 +232,21 @@ li:hover {
   rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px;
+}
+
 .about p {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px;
   text-align: justify;
 }
 
 .me {
-  border-radius: 0%;
-  border: 8px inset #ac97f8
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* Using media queries to adapt the screen to mobile view*/
