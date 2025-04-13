@@ -5,7 +5,7 @@ function displayImages() {
   let images = [];
 
   for (let i = 0; i <= 8; i++) {
-    images.push(`img/cozmo${i}` + ".jpg");
+    images.push(`../img/cozmo${i}` + ".jpg");
   }
 
   images.forEach((imageUrl) => {

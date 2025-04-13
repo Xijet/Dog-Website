@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <title>Dogs Are The Best</title>
   </head>
   <body>
     <div class="topNav">
       <ul>
-        <li onclick="window.location.href='index.html';">Home</li>
-        <li>Game</li>
+        <li>Home</li>
+        <li onclick="window.location.href='games.html';">Games</li>
         <li onclick="window.location.href='advice.html';">Advice</li>
         <li onclick="window.location.href='about.html';">About</li>
       </ul>
@@ -25,36 +25,29 @@
           away in April 22nd, 2022. I am dedicating this website to him.
         </p>
         <div class="profile">
-          <img src="img/cozmo0.JPG" />
+          <img src="../img/cozmo0.JPG" />
         </div>
       </div>
 
-      <div class="arkContainer">
-        <div class="ark">
-          <h1>Games</h1>
-          <h2>Tic Tac Toe</h2>
-          <p id="infoTic">Info</p>
-          <div id="gameboard"></div>
-          <h2>Rock Paper Scissor!</h2>
-          <div id="rockPaperScissor"></div>
-        </div>
-      </div>
+      <!-- Image gallery front page -->
+      <div id="imgGallery" class="imgGallery"></div>
 
       <!-- Right side column -->
       <div class="rightContainer">
         <h1>Socials</h1>
         <h2><a class="socials">&#8594; Linkedin</a></h2>
         <h2><a class="socials">&#8594; E-Mail</a></h2>
-        <img class="me" src="img/me.PNG" />
-    </div>
-    <div class="mobileMenu">
-      <button class="dropUpBtn">X</button>
-      <div class="dropUpContent">
-        <a href="games.html">Games</a>
-        <a href="advice.html">Advice</a>
-        <a href="about.html">About</a>
+        <img class="me" src="../img/me.PNG" />
+      </div>
+      <div class="mobileMenu">
+        <button class="dropUpBtn">X</button>
+        <div class="dropUpContent">
+          <a href="games.html">Games</a>
+          <a href="advice.html">Advice</a>
+          <a href="about.html">About</a>
+        </div>
       </div>
     </div>
-    <script src="games.js"></script>
+    <script src="../javascript/home.js"></script>
   </body>
 </html>
