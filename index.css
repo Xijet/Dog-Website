@@ -262,10 +262,42 @@ li:hover {
   text-align: center;
 }
 
+.mobileMenu {
+  display: none;
+  background-color: pink;
+  height: 20vh;
+  text-align: center;
+  width: 100%;
+}
+
+.dropUpContent  {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  max-width: 100px;
+}
+
+.dropUpBtn:focus + .dropUpContent {
+  display: block;
+  transition-duration: 1s;
+
+}
+
+.dropUpBtn{
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  height: 100%;
+}
+
 /* Using media queries to adapt the screen to mobile view*/
 @media only screen and (max-width: 500px) {
   .header {
     display: none;
+  }
+  .container {
+    flex-direction: column;
+    height: 100%
   }
   .rightContainer {
     display: none;
@@ -273,7 +305,11 @@ li:hover {
   .imgGallery {
     grid-template-columns: 1fr;
   }
-  .topNav li {
-    margin-left: 0;
+  .topNav {
+    display: none;
   }
+  .mobileMenu {
+    display: block;
+  }
+ 
 }
