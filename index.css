@@ -27,7 +27,7 @@ button:active {
   box-shadow: none;
 }
 
-.container {
+.container, .homeContainer {
   display: flex;
 }
 
@@ -264,10 +264,12 @@ li:hover {
 
 .mobileMenu {
   display: none;
-  background-color: pink;
-  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 1px 1px 2px black;
   text-align: center;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .dropUpContent  {
@@ -295,7 +297,7 @@ li:hover {
   .header {
     display: none;
   }
-  .container {
+  .homeContainer {
     flex-direction: column;
     height: 100%
   }
